@@ -17,7 +17,7 @@ body {
     text-align: center;
     margin-top: 20px;
     font-size: 36px; /* Ukuran font judul */
-    color: white(190, 155, 130); /* Mengubah warna teks menjadi hitam */
+    color: white; /* Mengubah warna teks menjadi putih */
     font-weight: bold; /* Membuat teks menjadi tebal */
 }
 
@@ -27,8 +27,8 @@ body {
     padding: 20px;
     border-radius: 10px; /* Sudut membulat */
     margin: 10px auto;
-    width: 45%; /* Menentukan lebar kotak */
-    
+    width: 90%; /* Mengubah lebar kotak menjadi 90% pada layar kecil */
+    max-width: 500px; /* Menetapkan lebar maksimum untuk kotak */
 }
 
 .quote-text {
@@ -56,4 +56,42 @@ body {
     background-color: #5a92b8; /* Efek hover: perubahan warna latar belakang */
     color: #ffffff; /* Warna teks tetap putih */
     transform: scale(1.05); /* Memperbesar tombol saat dihover */
+}
+
+/* Media Queries untuk responsif */
+@media (max-width: 768px) {
+    .title {
+        font-size: 28px; /* Mengubah ukuran font judul pada layar kecil */
+    }
+    
+    .quote-text {
+        font-size: 20px; /* Mengubah ukuran font kutipan pada layar kecil */
+    }
+
+    .quote-author {
+        font-size: 16px; /* Mengubah ukuran font penulis kutipan pada layar kecil */
+    }
+
+    .quote-button {
+        font-size: 14px; /* Mengubah ukuran font tombol pada layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px; /* Ukuran font judul lebih kecil untuk ponsel */
+    }
+
+    .quote-text {
+        font-size: 18px; /* Ukuran font kutipan lebih kecil untuk ponsel */
+    }
+
+    .quote-author {
+        font-size: 14px; /* Ukuran font penulis kutipan lebih kecil untuk ponsel */
+    }
+
+    .quote-button {
+        padding: 8px 16px; /* Mengurangi padding tombol untuk ponsel */
+        font-size: 12px; /* Ukuran font tombol lebih kecil untuk ponsel */
+    }
 }
