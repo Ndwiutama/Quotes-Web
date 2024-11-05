@@ -15,52 +15,41 @@ body {
 
 .title {
     text-align: center;
-    font-size: 4vw;
+    margin-top: 20px;
+    font-size: 4vw; /* Ukuran yang fleksibel dengan lebar layar */
     color: white;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek bayangan */
-    margin-bottom: 20px; /* Memberi jarak antara judul dan kotak kutipan */
 }
 
 .quote-box {
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     border-radius: 10px;
+    margin: 10px auto;
     width: 90%;
     max-width: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Memusatkan teks dan tombol di dalam kotak */
-    gap: 20px; /* Jarak antara elemen teks dan tombol */
 }
 
 .quote-text {
-    font-size: 3vw;
-    line-height: 1.6;
-    text-align: center; /* Teks kutipan ditengah */
+    font-size: 3vw; /* Ukuran fleksibel dengan lebar layar */
 }
 
 .quote-author {
-    font-size: 2vw;
+    font-size: 2vw; /* Ukuran fleksibel dengan lebar layar */
     margin-top: 10px;
-    text-align: right;
-    width: 100%; /* Menggunakan lebar penuh untuk teks penulis */
-    font-style: italic;
 }
 
 .quote-button {
+    margin-top: 20px;
     padding: 10px 20px;
-    font-size: 2.5vw;
+    font-size: 2.5vw; /* Ukuran fleksibel */
     background-color: #7fc8f8;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    align-self: center; /* Memusatkan tombol */
 }
 
 .quote-button:hover {
@@ -71,7 +60,7 @@ body {
 /* Media Queries untuk Layar Kecil */
 @media (max-width: 768px) {
     .title {
-        font-size: 6vw;
+        font-size: 6vw; /* Ukuran yang lebih kecil di layar ponsel */
     }
 
     .quote-text {
