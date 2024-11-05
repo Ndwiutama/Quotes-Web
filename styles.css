@@ -40,7 +40,7 @@ body {
 .quote-author {
     font-size: 2vw;
     margin-top: 10px;
-    text-align: right; /* Nama penulis rata kanan */
+    text-align: center; /* Nama penulis rata kanan */
     font-style: italic;
 }
 
