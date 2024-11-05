@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('sunset.jpg'); /* Ganti dengan nama file gambar Anda */
+    background-size: cover; /* Menyesuaikan gambar agar memenuhi layar */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    color: white; /* Mengubah warna teks default menjadi putih agar kontras dengan latar belakang */
+    height: 100vh; /* Menetapkan tinggi body 100% dari viewport */
+    display: flex; /* Menggunakan flexbox untuk memudahkan pemusatan */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    align-items: center; /* Memusatkan elemen secara horizontal */
+    justify-content: center; /* Memusatkan elemen secara vertikal */
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px; /* Ukuran font judul */
+    color: white(190, 155, 130); /* Mengubah warna teks menjadi hitam */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}
+
+.quote-box {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    padding: 20px;
+    border-radius: 10px; /* Sudut membulat */
+    margin: 10px auto;
+    width: 45%; /* Menentukan lebar kotak */
+    
+}
+
+.quote-text {
+    font-size: 24px;
+}
+
+.quote-author {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.quote-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7fc8f8; /* Warna tombol */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Menambahkan transisi */
+}
+
+.quote-button:hover {
+    background-color: #5a92b8; /* Efek hover: perubahan warna latar belakang */
+    color: #ffffff; /* Warna teks tetap putih */
+    transform: scale(1.05); /* Memperbesar tombol saat dihover */
+}
