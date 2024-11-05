@@ -1,97 +1,67 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('sunset.jpg'); /* Ganti dengan nama file gambar Anda */
-    background-size: cover; /* Menyesuaikan gambar agar memenuhi layar */
-    background-position: center; /* Memusatkan gambar */
-    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
-    color: white; /* Mengubah warna teks default menjadi putih agar kontras dengan latar belakang */
-    height: 100vh; /* Menetapkan tinggi body 100% dari viewport */
-    display: flex; /* Menggunakan flexbox untuk memudahkan pemusatan */
-    flex-direction: column; /* Mengatur arah flex menjadi kolom */
-    align-items: center; /* Memusatkan elemen secara horizontal */
-    justify-content: center; /* Memusatkan elemen secara vertikal */
+    background-image: url('sunset.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
     text-align: center;
     margin-top: 20px;
-    font-size: 36px; /* Ukuran font judul */
-    color: white; /* Mengubah warna teks menjadi putih */
-    font-weight: bold; /* Membuat teks menjadi tebal */
+    font-size: 4vw; /* Ukuran yang fleksibel dengan lebar layar */
+    color: white;
+    font-weight: bold;
 }
 
 .quote-box {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 10px; /* Sudut membulat */
+    border-radius: 10px;
     margin: 10px auto;
-    width: 90%; /* Mengubah lebar kotak menjadi 90% pada layar kecil */
-    max-width: 500px; /* Menetapkan lebar maksimum untuk kotak */
+    width: 90%;
+    max-width: 500px;
 }
 
 .quote-text {
-    font-size: 24px;
+    font-size: 3vw; /* Ukuran fleksibel dengan lebar layar */
 }
 
 .quote-author {
-    font-size: 18px;
+    font-size: 2vw; /* Ukuran fleksibel dengan lebar layar */
     margin-top: 10px;
 }
 
 .quote-button {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #7fc8f8; /* Warna tombol */
+    font-size: 2.5vw; /* Ukuran fleksibel */
+    background-color: #7fc8f8;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Menambahkan transisi */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .quote-button:hover {
-    background-color: #5a92b8; /* Efek hover: perubahan warna latar belakang */
-    color: #ffffff; /* Warna teks tetap putih */
-    transform: scale(1.05); /* Memperbesar tombol saat dihover */
+    background-color: #5a92b8;
+    transform: scale(1.05);
 }
 
-/* Media Queries untuk responsif */
+/* Media Queries untuk Layar Kecil */
 @media (max-width: 768px) {
     .title {
-        font-size: 28px; /* Mengubah ukuran font judul pada layar kecil */
-    }
-    
-    .quote-text {
-        font-size: 20px; /* Mengubah ukuran font kutipan pada layar kecil */
-    }
-
-    .quote-author {
-        font-size: 16px; /* Mengubah ukuran font penulis kutipan pada layar kecil */
-    }
-
-    .quote-button {
-        font-size: 14px; /* Mengubah ukuran font tombol pada layar kecil */
-    }
-}
-
-@media (max-width: 480px) {
-    .title {
-        font-size: 24px; /* Ukuran font judul lebih kecil untuk ponsel */
+        font-size: 6vw; /* Ukuran yang lebih kecil di layar ponsel */
     }
 
     .quote-text {
-        font-size: 18px; /* Ukuran font kutipan lebih kecil untuk ponsel */
-    }
-
-    .quote-author {
-        font-size: 14px; /* Ukuran font penulis kutipan lebih kecil untuk ponsel */
-    }
-
-    .quote-button {
-        padding: 8px 16px; /* Mengurangi padding tombol untuk ponsel */
-        font-size: 12px; /* Ukuran font tombol lebih kecil untuk ponsel */
-    }
-}
+        font-size: 4
