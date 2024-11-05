@@ -22,28 +22,32 @@ body {
 }
 
 .quote-box {
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     margin: 10px auto;
     width: 90%;
     max-width: 500px;
+    text-align: center;
 }
 
 .quote-text {
-    font-size: 3vw; /* Ukuran fleksibel dengan lebar layar */
+    font-size: 3vw;
+    text-align: justify; /* Menjadikan teks rata kanan kiri */
+    margin-bottom: 20px; /* Memberikan sedikit jarak di bawah teks */
 }
 
 .quote-author {
-    font-size: 2vw; /* Ukuran fleksibel dengan lebar layar */
+    font-size: 2vw;
     margin-top: 10px;
+    text-align: right; /* Nama penulis rata kanan untuk tampilan lebih elegan */
+    font-style: italic; /* Gaya miring untuk nama penulis */
 }
 
 .quote-button {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 2.5vw; /* Ukuran fleksibel */
+    font-size: 2.5vw;
     background-color: #7fc8f8;
     color: white;
     border: none;
@@ -60,7 +64,7 @@ body {
 /* Media Queries untuk Layar Kecil */
 @media (max-width: 768px) {
     .title {
-        font-size: 6vw; /* Ukuran yang lebih kecil di layar ponsel */
+        font-size: 6vw;
     }
 
     .quote-text {
@@ -68,31 +72,3 @@ body {
     }
 
     .quote-author {
-        font-size: 3.5vw;
-    }
-
-    .quote-button {
-        font-size: 3vw;
-        padding: 8px 16px;
-    }
-}
-
-/* Media Queries untuk Layar Sangat Kecil (Ponsel) */
-@media (max-width: 480px) {
-    .title {
-        font-size: 8vw;
-    }
-
-    .quote-text {
-        font-size: 5vw;
-    }
-
-    .quote-author {
-        font-size: 4vw;
-    }
-
-    .quote-button {
-        font-size: 3.5vw;
-        padding: 8px 12px;
-    }
-}
